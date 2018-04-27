@@ -1,0 +1,27 @@
+.container-fluid {
+    nav {
+        .navbar-brand {
+            color: whitesmoke;
+        }
+    }
+    .row {
+        max-width: 960px;
+        margin: 0 auto;
+        div {
+            padding-top: 10px;
+            .card {
+                padding: 0;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+#big {
+    width:100%;
+}
+div.seasons>ul, div.crew>ul, div.cast>ul {
+    list-style: none;
+    padding: 0;
+}

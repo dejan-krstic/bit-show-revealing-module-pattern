@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Top TV Shows</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-dark bg-dark justify-content-between">
+            <a href="./index.html" class="navbar-brand">BitShow</a>
+            <div class="dropdown">
+                <form class="form-inline">
+                    <!-- <input class="form-control mr-sm-2 dropdown-toggle" data-toggle="dropdown" type="search" placeholder="Search" aria-label="Search"> -->
+                    <input class="form-control mr-sm-2 dropdown-toggle" id="menu1" type="search" data-toggle="dropdown">
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <!--  <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">HTML</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">CSS</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">JavaScript</a>
+                        </li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">About Us</a>
+                        </li> -->
+                    </ul>
+                </form>
+            </div>
+        </nav>
+        <div class="row">
+
+            <!--    <div class="card">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div> -->
+        </div>
+    </div>
+
+
+    <script src="./js/UIModule.js"></script>
+    <script src="./js/dataModule.js"></script>
+    <script src="./js/mainModule.js"></script>
+    <script>
+        mainModule.initShows();
+    </script>
+</body>
+
+</html>

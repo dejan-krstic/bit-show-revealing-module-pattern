@@ -1,0 +1,20 @@
+.container-fluid nav .navbar-brand {
+  color: whitesmoke; }
+.container-fluid .row {
+  max-width: 960px;
+  margin: 0 auto; }
+  .container-fluid .row div {
+    padding-top: 10px; }
+    .container-fluid .row div .card {
+      padding: 0; }
+      .container-fluid .row div .card:hover {
+        cursor: pointer; }
+
+#big {
+  width: 100%; }
+
+div.seasons > ul, div.crew > ul, div.cast > ul {
+  list-style: none;
+  padding: 0; }
+
+/*# sourceMappingURL=main.css.map */
