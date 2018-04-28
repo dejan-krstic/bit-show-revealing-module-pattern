@@ -2,7 +2,7 @@ const mainModule = (() => {
 
 
     const initShows = () => {
-        $.get('http://api.tvmaze.com/shows')
+        $.get('https://api.tvmaze.com/shows')
             .done(onSuccessHandler)
             .fail(onErrorHandler);
     }
@@ -18,7 +18,7 @@ const mainModule = (() => {
 
     const liveSearch = () => {
         let searchValue = $(UIModule.UISelectors.checkSearch);
-        $.get(`http://api.tvmaze.com/search/shows?q=${searchValue.val()}`)        
+        $.get(`https://api.tvmaze.com/search/shows?q=${searchValue.val()}`)        
         .done(onSuccessSearchHandler)
         .fail(onErrorSearchHandler);     
     }
@@ -41,7 +41,7 @@ const mainModule = (() => {
     // --------------- single page code part
 
     const initSingle = () => {
-        $.get(`http://api.tvmaze.com/shows/${dataModule.fetchID()}?embed[]=seasons&embed[]=episodes&embed[]=cast&embed[]=crew&embed[]=akas`)
+        $.get(`https://api.tvmaze.com/shows/${dataModule.fetchID()}?embed[]=seasons&embed[]=episodes&embed[]=cast&embed[]=crew&embed[]=akas`)
         .done(onSuccessSingleHandler)
         .fail(onErrorSingleHandler);
     }
